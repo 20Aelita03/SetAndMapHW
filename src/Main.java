@@ -16,21 +16,21 @@ public class Main {
         Collections.sort(nums);
         int result = Integer.MIN_VALUE;
         for (int num2 : nums) {
-            if (num2 % 2 == 0 && num2 != result){
+            if (num2 % 2 == 0 && num2 != result) {
                 System.out.println(num2);
                 result = num2;
             }
         }
         //Задание 3
         System.out.println("Задание 3");
-        List<String> str = new ArrayList<>(List.of("ab","bcc", "bcc", "bac","cae", "dar", "dar"));
+        List<String> str = new ArrayList<>(List.of("ab", "bcc", "bcc", "bac", "cae", "dar", "dar"));
         Set<String> str2 = new HashSet<>(str);
         System.out.println(str2);
 
         //Задание 4
         System.out.println("Задание 4");
-        List<String> strings = new ArrayList<>(List.of("один", "два","два", "три", "три", "три"));
-        Map<String,Integer> dubl = strings.stream().collect(Collectors.toMap(e -> e, e -> 1,Integer::sum));
+        List<String> strings = new ArrayList<>(List.of("один", "два", "два", "три", "три", "три"));
+        Map<String, Integer> dubl = strings.stream().collect(Collectors.toMap(e -> e, e -> 1, Integer::sum));
         System.out.println(dubl);
 
     }
